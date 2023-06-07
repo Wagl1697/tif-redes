@@ -1,0 +1,5 @@
+eventlet==0.33.3
+Flask==2.3.2            # Desplegar servidor web de desarrollo
+Flask-Bootstrap==3.3.7.1
+Flask-MQTT==1.1.1       # Suscripción al Broker para recibir paquetes MQTT
+Flask-SocketIO==5.3.4   # Conexión WebSocket con HTML

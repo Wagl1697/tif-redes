@@ -1,0 +1,46 @@
+/*
+=======================
+      CSS PROPIO
+=======================
+En este archivo se realizarán todas las implementaciones de estilos, para mantener separado y 
+organizado de los estilos de Bootstrap.
+*/
+
+
+/*Título NavBar*/
+.titulo-gica-pc {
+  display: inline-block;
+}
+.titulo-gica-mobile {
+  display: none;
+}
+/*Título NavBar Mobile*/
+@media (max-width: 600px) {
+  .titulo-gica-pc {
+    display: none;
+  }
+  .titulo-gica-mobile {
+    display: inline-block;
+  }
+}
+
+
+.recuadro-central {
+  height: 750px;
+  background-color: #bdc3c7;
+}
+
+.texto {
+  font-family:monospace;
+  font-size: 80px;
+  text-align: center;
+}
+
+@media (max-width: 900px) {
+  .recuadro-central {
+    height: 400px;
+  }
+  .texto {
+    font-size: 30px;
+  }
+}

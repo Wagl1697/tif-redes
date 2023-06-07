@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>GICA - Grupo de Informática y Computación Aplicada | FI UNER</title>
+        <!-- Favicon -->
+        <link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='demo_cliente/assets/favicon.ico') }}" />
+        <!-- Link a archivo de estilos Bootstrap -->
+        <link rel="stylesheet" href="{{ url_for('static', filename='demo_cliente/css/style.css') }}">
+        <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+        <!-- Importo biblioteca para MQTT (mqtt.js) -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mqtt/4.2.6/mqtt.js"></script>
+        <!-- Creo script para captar mensajes MQTT emitidos y mostrarlo en el cliente HTML -->
+        <script src="{{ url_for('static', filename='demo_cliente/js/mqtt_script.js') }}"></script>
+    </head>
+
+    <body>
+
+        <!-- Barra de navegación -->
+
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <a class="titulo-gica-pc navbar-brand" href="#!">Grupo de Informática y Computación Aplicada</a>
+                <a class="titulo-gica-mobile navbar-brand" href="#!">GICA</a>
+            </div>
+        </nav>
+        
+        <div class="container mt-5">
+            <div class="row">
+                <div class="col-lg-12">
+                    <article>
+                        <!-- Post header -->
+                        <header class="mb-4">
+                            <!-- Post title -->
+                            <h1 class="fw-bolder mb-1">NodeMCU - Flask/MQTT | Demo Cliente</h1>
+                            <!-- Post categories -->
+                            <a class="badge bg-secondary text-decoration-none link-light" href="#!">NodeMCU</a>
+                            <a class="badge bg-secondary text-decoration-none link-light" href="#!">Flask</a>
+                            <a class="badge bg-secondary text-decoration-none link-light" href="#!">MQTT</a>
+                            <!-- Post meta content -->
+                            <div class="text-muted fst-italic mb-2">Datos recibidos mediante "mqtt" generados por una NodeMCU.</div>
+                        </header>
+                    
+                        <section class="mb-5">                        
+                            <!-- Contenido principal -->
+                            <div class="recuadro-central container-fluid">
+                                <div class="texto">
+                                    <p id="contenido">
+                                        Mensaje recibido:
+                                        <br>
+                                        <span id="mensaje_mqtt" class="d-block"></span>
+                                    </p>
+                                </div>
+                            </div>
+                        </section>
+                    </article>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer-->
+        <footer class="py-4 bg-dark">
+            <div class="container"><p class="m-0 text-center text-white">Footer</p></div>
+        </footer>
+        
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    </body>
+</html>
